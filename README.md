@@ -32,7 +32,7 @@ col_names = ['CRIM','ZN','INDUS','CHAS','NOX','RM','AGE','DIS','RAD','TAX' ,'PTR
 
 feature_cols = ['CRIM','ZN','INDUS','CHAS','NOX','RM','AGE','DIS','RAD','TAX' ,'PTRATIO','B','LSTAT']
 X = data[feature_cols]
-y = data.MEDV
+y = data.CATMEDV
 
 X_train, X_test, y_train, y_test = train_test_split (X,y, test_size=0.3, random_state=1)
 
