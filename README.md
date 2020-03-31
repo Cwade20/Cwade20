@@ -41,7 +41,10 @@ for i, col in enumerate(features.columns):
     plt.title(col)
     plt.xlabel(col)
     plt.ylabel('prices')
+```
+![RM](https://user-images.githubusercontent.com/61456930/78031814-11a7f380-7332-11ea-8aaf-31ce52e74fec.png)
 
+```python
 from sklearn import model_selection
 X_train, X_test, y_train, y_test = model_selection.train_test_split(features, prices, test_size = 0.2, random_state = 42)
 print("Training and testing split was successful")
