@@ -43,7 +43,7 @@ export_graphviz(clf, out_file=dot_data,
 graph = pydotplus.graph_from_dot_data(dot_data.getvalue())  
 Image(graph.create_png())
 ```
-![2 Level](https://user-images.githubusercontent.com/61456930/78094351-5bc8bd80-73a2-11ea-9b9c-2c0d1c2cfc1c.png)
+![2 Level](https://user-images.githubusercontent.com/61456930/78187018-b3ffce00-743b-11ea-9302-9b4253f5a228.png)
 
 
 
@@ -89,4 +89,4 @@ export_graphviz(clf, out_file=dot_data,
 graph = pydotplus.graph_from_dot_data(dot_data.getvalue())  
 Image(graph.create_png())
 ```
-![3 Level](https://user-images.githubusercontent.com/61456930/78094449-903c7980-73a2-11ea-90ca-e29ed70ca7b6.png)
+![3 Level](https://user-images.githubusercontent.com/61456930/78186997-aba79300-743b-11ea-9049-e8585e5a64f0.png)
