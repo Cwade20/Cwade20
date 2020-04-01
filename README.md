@@ -90,3 +90,10 @@ graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
 Image(graph.create_png())
 ```
 ![3 Level](https://user-images.githubusercontent.com/61456930/78186997-aba79300-743b-11ea-9049-e8585e5a64f0.png)
+
+## Question 3
+What is the optimal decision tree and why?
+
+>Based on the results of our decision tree, I feel that a level of 3 is sufficient for this classification. At a tree depth of 3, we have 4 out of 7 of our leafs indicating a gini index score of 0.0. This correlates to our projection classifying all samples within its respective leaf. This equates to a 57% 100% prediction. When analyzing the gini score for the remaining 3 leafs, we have values of .444, .015, and .453 respectivly. While two of these leafs are relativly higher indicating that of the given sample size, there is a 44.4% chance and 45.3% chance to be incorrectly categorized within the leaf, our third value of 1.5% could almost be categorized as near perfect, giving us 5 out of 7 or 71.4% accuracy within our tree. If we review the data from our 2 depth tree, we can see that we only have 1 out of 4 leafs, or 25% 100% accuracy. The remaining leafs more often than not incorrectly cateogrize our information. However splitting to a greater value of depths, I feel adds too much clutter to our visual, and I do not feel it adds any extraordinary data of relevence. I have diaplayed a 4 level tree below for visual aid. 
+
+![4](https://user-images.githubusercontent.com/61456930/78189443-09d67500-7440-11ea-8eb7-b4545f55b4be.png)
