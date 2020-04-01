@@ -39,7 +39,7 @@ print("Accuracy:", metrics.accuracy_score(y_test, y_pred))
 dot_data = StringIO()
 export_graphviz(clf, out_file=dot_data,  
                 filled=True, rounded=True,
-                special_characters=True)
+                special_characters=True, class_names=True, feature_names=feature_cols)
 graph = pydotplus.graph_from_dot_data(dot_data.getvalue())  
 Image(graph.create_png())
 ```
@@ -85,7 +85,7 @@ print("Accuracy:", metrics.accuracy_score(y_test, y_pred))
 dot_data = StringIO()
 export_graphviz(clf, out_file=dot_data,  
                 filled=True, rounded=True,
-                special_characters=True)
+                special_characters=True, class_names=True, feature_names=feature_cols)
 graph = pydotplus.graph_from_dot_data(dot_data.getvalue())  
 Image(graph.create_png())
 ```
