@@ -1,4 +1,4 @@
-# Question 1
+## Question 1
 Make and show a tree with 2 levels
 
 
@@ -45,7 +45,9 @@ Image(graph.create_png())
 ```
 ![2 Level](https://user-images.githubusercontent.com/61456930/78094351-5bc8bd80-73a2-11ea-9b9c-2c0d1c2cfc1c.png)
 
-# Question 2
+
+
+## Question 2
 Make and show a tree with 3 levels
 
 ```python
